@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" href="favicon.png" type="image" sizes="16x16">
+  
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+<title>Esports 101</title>
+	<meta charset= "UTF-8">
+</head>
+<body>
+<a href="index.html">
+  <img src="facebook_cover_photo_2.png" alt="Esports 101" style="width:100%">
+</a>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="tournaments.html">Tournaments</a>
+  <a href="news.html">News</a>
+  <a href="about.html">About</a>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Contact
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="contact.html">Contact Us</a>
+    <a href="meet.html">Meet the team</a>
+  </div>
+  </div> 
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+<div align="center">
+
+<div align="center">
+ <marquee behavior="alternate" bgcolor="#bb3434" direction="left" height:="" 
+ loop="7" scrollamount="1" scrolldelay="2" width="100%">
+ <span style="font-size: 20px;color:#FFFFFF">
+ Welcome to Esports 101</span></marquee>
+</div>
+
+<h1><p style="text-align:center;">About Us</p></h1>
+<p>Welcome to Esports 101, your number one source for all things Esports and Gaming. We're dedicated to providing you the very best coverage and news on competitive gaming or anything involving popular video games. 
+
+
+Founded in 2019 by Peter Mullen, "Esports 101" has come a long way from its beginnings on the NJIT campus in Newark, New Jersey When Peter Mullen first started out, his passion for Esports drove him to start his own website covering everything he knew a competitive gamer would want to see. As someone who has been both a competitor and viewer in the Esports landscape, Peter created "Esports 101" to offer those who are either well-versed or even new to the Esports industry a simpler way to understand what goes on in-game. We now serve customers all over the country and are thrilled that we're able to turn our passion into a simple, easy-to-use website.
+
+
+We hope you enjoy our site as much as we enjoy offering it to you. If you have any questions or comments, please don't hesitate to contact us.
+
+
+Sincerely,
+The team at Esports 101</p>
+<style>
+footer {
+  background-color: #800020;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+</style>
+
+<footer>
+  <p>© 2019 Esports 101. All rights reserved. All trademarks are the property of their respective owners.</p>
+</footer>
+
+</body>
+</html>
